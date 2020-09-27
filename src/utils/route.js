@@ -1,4 +1,3 @@
-import _ from 'lodash/fp'
 
 export const getPath = (routeName, params = {}) => {
   switch (routeName) {
