@@ -3,8 +3,9 @@ import { Provider } from 'react-redux'
 import { StylesProvider, createMuiTheme } from '@material-ui/core/styles'
 import { ThemeProvider } from '@material-ui/styles'
 import { Switch, Route } from 'react-router-dom'
-import { ScreenClassProvider } from 'react-grid-system'
+import { ScreenClassProvider, setConfiguration } from 'react-grid-system'
 import { map } from 'lodash/fp'
+import { GRID_BREAKPOINTS, CONTAINER_BREAKPOINTS } from 'utils/style'
 
 import { SCREEN_GLOBAL } from 'constants/index.js'
 
@@ -28,10 +29,12 @@ const theme = createMuiTheme({
   }
 })
 
-const App = ({ store = {}, fallbackScreenClass = 'xl' }) => (
+setConfiguration({ breakpoints: GRID_BREAKPOINTS, containerWidths: CONTAINER_BREAKPOINTS })
+
+const App = ({ store = {} }) => (
   <>
     <Provider store={store}>
-      <ScreenClassProvider fallbackScreenClass={fallbackScreenClass}>
+      <ScreenClassProvider fallbackScreenClass={'xl'}>
         <StylesProvider injectFirst>
           <ThemeProvider theme={theme}>
             <Topbar/>
