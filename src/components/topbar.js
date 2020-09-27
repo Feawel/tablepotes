@@ -1,5 +1,6 @@
 import React, { useState, useCallback } from 'react'
 import styled from 'styled-components'
+import { LIGHT_BACKGROUND_COLOR } from 'utils/style'
 
 import AppBar from '@material-ui/core/AppBar'
 import Toolbar from '@material-ui/core/Toolbar'
@@ -18,7 +19,7 @@ import InboxIcon from '@material-ui/icons/MoveToInbox'
 import MailIcon from '@material-ui/icons/Mail'
 
 const StyledAppBar = styled(AppBar)`
-  background-color: #293942;
+  background-color: ${LIGHT_BACKGROUND_COLOR};
 `
 
 const StyledButtons = styled.div`
