@@ -77,7 +77,7 @@ const HomeScreen = () => {
             <StyledPaperButton>Découvrir</StyledPaperButton>
           </Col>
           <Col xs={8} md={8} lg={6}>
-            <iframe style={{ marginTop: 40 }} width="560" height="315" src="https://www.youtube.com/embed/S9Ngt8OJU1A" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen={true} />
+            <iframe title="youtube video episode 0" style={{ marginTop: 40 }} width="560" height="315" src="https://www.youtube.com/embed/S9Ngt8OJU1A" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen={true} />
           </Col>
         </Row>
       </Container>
