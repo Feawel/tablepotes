@@ -72,12 +72,12 @@ const HomeScreen = () => {
       <Metas screen={SCREEN_HOME} />
       <Container>
         <Row justify="center" align="center" gutterWidth={50}>
-          <Col xs={4} md={6}>
+          <Col xs={8} md={8} lg={6}>
             <StyledTitle>TablePotes : une table, des potes et du JDR ! </StyledTitle>
             <StyledPaperButton>Découvrir</StyledPaperButton>
           </Col>
-          <Col xs={8} md={6}>
-            <iframe style={{ marginTop: 40 }} width="560" height="315" src="https://www.youtube.com/embed/S9Ngt8OJU1A" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullscreen />
+          <Col xs={8} md={8} lg={6}>
+            <iframe style={{ marginTop: 40, maxWidth: 560 }} width="560" height="315" src="https://www.youtube.com/embed/S9Ngt8OJU1A" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullscreen />
           </Col>
         </Row>
       </Container>

@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { LIGHT_BACKGROUND_COLOR } from 'utils/style'
+import { LIGHT_BACKGROUND_COLOR, mediaMax } from 'utils/style'
 import MediaCard from './mediaCard'
 
 const StyledEpisode = styled.div`
@@ -8,6 +8,7 @@ const StyledEpisode = styled.div`
   display: inline-block;
   vertical-align: top;
   margin-right: 30px;
+  ${mediaMax({ max: 960, style: `display: block; margin: auto; margin-top: 30px;` })}
 `
 
 const StyledTitle = styled.h1`
@@ -23,6 +24,7 @@ const StyledBackground = styled.div`
   background-color: ${LIGHT_BACKGROUND_COLOR};
   padding-top: 80px;
   padding-bottom: 80px;
+  ${mediaMax({ max: 960, style: `padding-top: 20px; padding-bottom: 20px;` })}
 `
 
 const StyledEpisodes = styled.div`
@@ -34,6 +36,7 @@ const StyledContent = styled.div`
   display: inline-block;
   padding-left: 20px;
   padding-right: 30px;
+  ${mediaMax({ max: 960, style: `display: block; margin: auto; text-align: center;` })}
 `
 
 const Episodes = () =>

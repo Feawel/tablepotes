@@ -35,3 +35,15 @@ export const styledColoredButton = color => `
 
 export const styledPurpleButton = styledColoredButton(SECONDARY_COLOR)
 export const styledPurpleBackgroundButton = styledColoredBackgroundButton(SECONDARY_COLOR)
+
+export const mediaMax = ({ max, style }) => `
+  @media handheld, only screen and (max-width: ${max}px), only screen and (max-device-width: ${max}px) {
+    ${style}
+  }
+`
+
+export const mediaMin = ({ min, style }) => `
+  @media only screen and (min-width: ${min}px) {
+    ${style}
+  }
+`
